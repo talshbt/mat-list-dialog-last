@@ -30,9 +30,8 @@ export class AlertDialogComponent {
     // arr = ['x', 'y' , 'z']
   
 
-  selectedCountry: string = "GB";
   
-  selectedCountryControl = new FormControl(this.selectedCountry);
+  // selectedCountryControl = new FormControl(this.selectedCountry);
 
 
 }
