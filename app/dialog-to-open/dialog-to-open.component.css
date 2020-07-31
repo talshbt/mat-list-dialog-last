@@ -29,7 +29,7 @@ mat-selection-list{
   height:80vh;
 }
 .customer-names:hover {
-  color:#aa3c9f;
+  color:pink;
  }
  ::ng-deep.mat-pseudo-checkbox{
   display: none !important;
