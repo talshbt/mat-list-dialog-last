@@ -14,53 +14,55 @@ export class AppComponent {
     private snackBar: MatSnackBar) {
   }
 
-  public constructDialog<T>(TCtor: new (...args: any[]) => T,data: any): MatDialogRef<T,any> {
-    const dialogConfig = new MatDialogConfig();
-    dialogConfig.autoFocus = true;
-    const dialogRef = this.dialog.open(TCtor, dialogConfig);
-    return dialogRef;
- }
+//   public constructDialog<T>(TCtor: new (...args: any[]) => T,data: any): MatDialogRef<T,any> {
+//     const dialogConfig = new MatDialogConfig();
+//     dialogConfig.autoFocus = true;
+//     const dialogRef = this.dialog.open(TCtor, dialogConfig);
+//     return dialogRef;
+//  }
 
- openGenericDialog() {
-   const dialogRef = this.constructDialog(ConfirmationDialog,{
-           data:{
-        message: 'Are you sure want to delete?',
-        buttonText: {
-          ok: 'Save',
-          cancel: 'No'
-        }
-      }
-   });
- }
+//  openGenericDialog() {
+//    const dialogRef = this.constructDialog(ConfirmationDialog,{
+//       width:'1000px',
+//       height:'400px',
+//            data:{
+//         message: 'Are you sure want to delete?',
+//         buttonText: {
+//           ok: 'Save',
+//           cancel: 'No'
+//         }
+//       }
+//    });
+//  }
 
-  openDialog() {
-    const dialogRef = this.dialog.open(ConfirmationDialog,{
-      width:'1000px',
-      height:'400px',
-      data:{
-        message: 'Are you sure want to delete?',
-        arr: this.arr,
-        buttonText: {
-          ok: 'Save',
-          cancel: 'No'
-        }
-      }
-    });
-    const snack = this.snackBar.open('Snack bar open before dialog');
+//   openDialog() {
+//     const dialogRef = this.dialog.open(ConfirmationDialog,{
+//       width:'1000px',
+//       height:'400px',
+//       data:{
+//         message: 'Are you sure want to delete?',
+//         arr: this.arr,
+//         buttonText: {
+//           ok: 'Save',
+//           cancel: 'No'
+//         }
+//       }
+//     });
+//     const snack = this.snackBar.open('Snack bar open before dialog');
 
-    dialogRef.afterClosed().subscribe((confirmed: boolean) => {
-      if (confirmed) {
-        snack.dismiss();
-        const a = document.createElement('a');
-        a.click();
-        a.remove();
-        snack.dismiss();
-        this.snackBar.open('Closing snack bar in a few seconds', 'Fechar', {
-          duration: 2000,
-        });
-      }
-    });
-  }
+//     dialogRef.afterClosed().subscribe((confirmed: boolean) => {
+//       if (confirmed) {
+//         snack.dismiss();
+//         const a = document.createElement('a');
+//         a.click();
+//         a.remove();
+//         snack.dismiss();
+//         this.snackBar.open('Closing snack bar in a few seconds', 'Fechar', {
+//           duration: 2000,
+//         });
+//       }
+//     });
+//   }
 
   openAlertDialog() {
     const dialogRef = this.dialog.open(AlertDialogComponent,{
