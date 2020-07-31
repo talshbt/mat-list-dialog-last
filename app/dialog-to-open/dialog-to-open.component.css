@@ -5,17 +5,18 @@
 mat-form-field {
   width: 100%;
 }
-#add-button{
-  top: auto;
-  right: 20px;
-  bottom: 20px;
-  left: auto;
-  position: fixed;
+
+.add-btn{
+    float: right;
+    bottom: -115px;
+    position: relative;
+ 
 }
 .customer-img{
   height:30px;
   width:30px;
   margin-left:-32px;
+  
 }
 .customer-names{
   padding-left:13px;

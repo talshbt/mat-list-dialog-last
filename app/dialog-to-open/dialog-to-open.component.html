@@ -1,3 +1,7 @@
+
+
+
+<div class="dialog-comp"> 
 <mat-dialog-content>
 	<div class="wrapper" fxLayout="column" fxLayoutAlign="start stretch">
 <mat-list>
@@ -15,14 +19,24 @@
           <mat-icon>delete</mat-icon>
         </button>
 </mat-list-item>
-</mat-list>
-</div>
 
-<button mat-fab color="primary" id="add-button" matTooltip="Add customer"><i class="material-icons" (click) = "onAdd()" >+</i></button>
+
+
+
+</mat-list>
+
+
+</div>
 
 
 
 </mat-dialog-content>
-<mat-dialog-actions align="end">
+<mat-dialog-actions  align="end">
 	<button mat-raised-button color="primary" mat-dialog-close tabindex="-1">{{cancelButtonText}}</button>
 </mat-dialog-actions>
+
+
+    <button mat-fab color="primary" class="add-btn"  matTooltip="Add customer"><i class="material-icons" (click) = "onAdd()" >{{addButtonText}}</i></button>
+
+
+</div>

@@ -26,7 +26,8 @@ export class AppComponent {
         message: 'HelloWorld',
         arr:this.arr,
         buttonText: {
-          cancel: 'Done'
+          cancel: 'Done',
+          add: '+'
         }
       },
     });

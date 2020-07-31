@@ -10,6 +10,7 @@ import { FormControl } from '@angular/forms';
 export class DialogToOpenComponent {message: string = ""
   arr:[] = null;
   cancelButtonText = "Cancel"
+  addButtonText = ""
   constructor(
     @Inject(MAT_DIALOG_DATA) private data: any,
     private dialogRef: MatDialogRef<DialogToOpenComponent>) {
@@ -18,9 +19,10 @@ export class DialogToOpenComponent {message: string = ""
       this.message = data.message || this.message;
       if (data.buttonText) {
         this.cancelButtonText = data.buttonText.cancel || this.cancelButtonText;
+        this.addButtonText = data.buttonText.add
       }
     }
-    this.dialogRef.updateSize('300vw','300vw')
+    // this.dialogRef.updateSize('300vw','300vw')
   }
 
   onConfirmClick(): void {
