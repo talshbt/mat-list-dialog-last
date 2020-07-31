@@ -8,6 +8,7 @@ import { AlertDialogComponent } from './alert-dialog/alert-dialog.component';
 })
 export class AppComponent {
   version = VERSION;
+  arr = ['x','y','z']
 
   constructor(private dialog: MatDialog,
     private snackBar: MatSnackBar) {
@@ -38,6 +39,7 @@ export class AppComponent {
       height:'400px',
       data:{
         message: 'Are you sure want to delete?',
+        arr: this.arr,
         buttonText: {
           ok: 'Save',
           cancel: 'No'
