@@ -34,6 +34,8 @@ export class AppComponent {
 
   openDialog() {
     const dialogRef = this.dialog.open(ConfirmationDialog,{
+      width:'1000px',
+      height:'400px',
       data:{
         message: 'Are you sure want to delete?',
         buttonText: {

@@ -1,5 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { VERSION, MatDialogRef, MatDialog, MatSnackBar, MAT_DIALOG_DATA } from '@angular/material';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-alert-dialog',
@@ -23,5 +24,13 @@ export class AlertDialogComponent {
   onConfirmClick(): void {
     this.dialogRef.close(true);
   }
+
+    arr = ['x', 'y' , 'z']
+  
+
+  selectedCountry: string = "GB";
+  
+  selectedCountryControl = new FormControl(this.selectedCountry);
+
 
 }
