@@ -31,14 +31,16 @@
 
 
 </mat-dialog-content>
-<mat-dialog-actions  align="end">
-	<button mat-raised-button color="primary" mat-dialog-close tabindex="-1">{{cancelButtonText}}</button>
-</mat-dialog-actions>
 
 
-    <button mat-fab color="primary" class="add-btn"  matTooltip="Add customer">     <mat-icon>add</mat-icon></button>
+    <button mat-fab color="primary"  class="add-btn" matTooltip="Add customer" align="end">   <mat-icon>add</mat-icon></button>
   <!-- <button mat-icon-button class="add-btn" (click)="onEdit($event, item)">
           <mat-icon>plus</mat-icon>
         </button> -->
+
+        <mat-dialog-actions  class="done-btn"  >
+	<button mat-raised-button color="primary" mat-dialog-close tabindex="-1">{{cancelButtonText}}</button>
+</mat-dialog-actions>
+
 
 </div>
