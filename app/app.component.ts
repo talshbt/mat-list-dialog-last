@@ -21,7 +21,7 @@ export class AppComponent {
   openAlertDialog() {
     const dialogRef = this.dialog.open(DialogToOpenComponent,{
       width:'400px',
-      height:'700px',
+      height:'500px',
       data:{
         message: 'HelloWorld',
         arr:this.arr,
