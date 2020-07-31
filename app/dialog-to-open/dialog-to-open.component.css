@@ -8,7 +8,8 @@ mat-form-field {
 
 .add-btn{
     float: right;
-    right:91px;
+    right:15px;
+    top:40px;
     position: relative;
  
 }
