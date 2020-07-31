@@ -47,6 +47,7 @@ import {
 import {AppComponent} from './app.component';
 import {ConfirmationDialog} from './confirmation-dialog.component';
 import { AlertDialogComponent } from './alert-dialog/alert-dialog.component';
+import { DialogToOpenComponent } from './dialog-to-open/dialog-to-open.component';
 
 
 /**
@@ -109,7 +110,7 @@ export class MaterialModule {}
     ReactiveFormsModule,
     BrowserAnimationsModule
   ],
-  declarations: [AppComponent,ConfirmationDialog, AlertDialogComponent],
+  declarations: [AppComponent,ConfirmationDialog, AlertDialogComponent, DialogToOpenComponent],
   entryComponents: [ConfirmationDialog, AlertDialogComponent],
   bootstrap: [AppComponent],
   providers: []
