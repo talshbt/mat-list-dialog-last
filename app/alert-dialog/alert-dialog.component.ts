@@ -8,11 +8,13 @@ import { FormControl } from '@angular/forms';
 })
 export class AlertDialogComponent {
   message: string = ""
+  arr:[] = null;
   cancelButtonText = "Cancel"
   constructor(
     @Inject(MAT_DIALOG_DATA) private data: any,
     private dialogRef: MatDialogRef<AlertDialogComponent>) {
     if (data) {
+      this.arr  = data.arr;
       this.message = data.message || this.message;
       if (data.buttonText) {
         this.cancelButtonText = data.buttonText.cancel || this.cancelButtonText;
@@ -25,7 +27,7 @@ export class AlertDialogComponent {
     this.dialogRef.close(true);
   }
 
-    arr = ['x', 'y' , 'z']
+    // arr = ['x', 'y' , 'z']
   
 
   selectedCountry: string = "GB";

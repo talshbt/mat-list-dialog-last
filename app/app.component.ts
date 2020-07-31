@@ -21,6 +21,7 @@ export class AppComponent {
       height:'400px',
       data:{
         message: 'HelloWorld',
+        arr:this.arr,
         buttonText: {
           cancel: 'Done'
         }
