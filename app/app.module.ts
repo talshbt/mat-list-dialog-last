@@ -111,7 +111,7 @@ export class MaterialModule {}
     BrowserAnimationsModule
   ],
   declarations: [AppComponent,ConfirmationDialog, AlertDialogComponent, DialogToOpenComponent],
-  entryComponents: [ConfirmationDialog, AlertDialogComponent],
+  entryComponents: [ConfirmationDialog, DialogToOpenComponent,AlertDialogComponent],
   bootstrap: [AppComponent],
   providers: []
 })

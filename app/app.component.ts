@@ -2,6 +2,9 @@ import { Component, Inject } from '@angular/core';
 import { VERSION, MatDialogRef, MatDialog, MatSnackBar, MAT_DIALOG_DATA, MatDialogConfig } from '@angular/material';
 import {ConfirmationDialog} from './confirmation-dialog.component';
 import { AlertDialogComponent } from './alert-dialog/alert-dialog.component';
+import { DialogToOpenComponent } from './dialog-to-open/dialog-to-open.component';
+
+
 @Component({
   selector: 'material-app',
   templateUrl: 'app.component.html'
@@ -16,7 +19,7 @@ export class AppComponent {
 
 
   openAlertDialog() {
-    const dialogRef = this.dialog.open(AlertDialogComponent,{
+    const dialogRef = this.dialog.open(DialogToOpenComponent,{
       width:'1000px',
       height:'400px',
       data:{
