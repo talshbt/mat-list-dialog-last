@@ -22,7 +22,7 @@ export class DialogToOpenComponent {message: string = ""
         this.addButtonText = data.buttonText.add
       }
     }
-    // this.dialogRef.updateSize('300vw','300vw')
+     this.dialogRef.updateSize('1000vw','1000vw')
   }
 
   onConfirmClick(): void {

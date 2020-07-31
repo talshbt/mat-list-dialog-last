@@ -8,7 +8,7 @@ mat-form-field {
 
 .add-btn{
     float: right;
-    bottom: -115px;
+ 
     position: relative;
  
 }
@@ -40,4 +40,11 @@ mat-list-item{
 
 button.mat-raised-button{
   top:113px;
+}
+
+
+.mat-dialog-content{
+  height: 200px;
+    position: relative;
+  top:80px;
 }
