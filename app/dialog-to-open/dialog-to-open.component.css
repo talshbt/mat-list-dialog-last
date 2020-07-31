@@ -44,7 +44,11 @@ button.mat-raised-button{
 
 
 .mat-dialog-content{
+
   height: 200px;
     position: relative;
+      width:350px;
+
   top:80px;
 }
+
