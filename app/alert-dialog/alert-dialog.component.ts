@@ -4,7 +4,8 @@ import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-alert-dialog',
-  templateUrl: './alert-dialog.component.html'
+  templateUrl: './alert-dialog.component.html',
+  
 })
 export class AlertDialogComponent {
   message: string = ""
